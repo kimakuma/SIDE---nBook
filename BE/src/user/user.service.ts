@@ -109,7 +109,7 @@ export class UserService {
   ) {
     await this.dataSource.transaction(async (manager) => {
       const user = new UserEntity();
-      //user.id = ulid();
+      //user.id = ulid(); -> entity에서 autoincrement로 변경해줌.
       user.name = name;
       user.email = email;
       user.password = password;

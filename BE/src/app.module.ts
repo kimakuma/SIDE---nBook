@@ -12,7 +12,7 @@ import { UserModule } from './user/user.module';
       //envFilePath: [`${__dirname}/config/env/.${process.env.NODE_ENV}.env`],
       load: [emailConfig],
       isGlobal: true,
-      //validationSchema,
+      validationSchema,
     }),
     TypeOrmModule.forRoot({
       type: 'mysql',
